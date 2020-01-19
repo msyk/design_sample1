@@ -1,0 +1,21 @@
+.comment	{
+    font-size: 70%;
+    color: red;
+}
+button	{
+    font-size: 10pt;
+}
+select	{
+    font-size: 14pt;
+}
+table.subcat    {
+    border: none;
+    margin: 0 0 0 16px;
+    padding: 0;
+}
+
+table.subcat   td {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
