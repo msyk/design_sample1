@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="contexts.php"></script>
+</head>
+<body>
+<h1>Personal Memo</h1>
+<div class="comment">ここにページネーションのコントロール</div>
+<div style="display: flex">
+    <table style="min-width: 160px; margin-right: 8px;">
+        <thead>
+        <tr>
+            <th>絞り込み</th>
+        </tr>
+        <thead>
+        <tbody>
+        <tr>
+            <td>
+                <button>全て表示</button>
+            </td>
+        </tr>
+        <tr>
+            <td>仕事</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="subcat">
+                    <tr>
+                        <td>
+                            <button>毎日</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>レポート</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>進行中</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>気付き</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>ホーム</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="subcat">
+                    <tr>
+                        <td>
+                            <button>レジャー</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>学校行事</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>趣味</td>
+        </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+        <tr>
+            <th>大分類</th>
+            <th>小分類</th>
+            <th>日時</th>
+            <th>メモ</th>
+            <th></th>
+        </tr>
+        <thead>
+        <tbody>
+        <tr>
+            <td><select>
+                <option selected>仕事</option>
+                <option>ホーム</option>
+                <option>趣味</option>
+            </select></td>
+            <td><select>
+                <option selected>毎日</option>
+                <option>レポート</option>
+                <option>進行中</option>
+                <option>気付き</option>
+            </select></td>
+            <td>
+                <input type="text" size="15" value="2020/01/15 12:45">
+                <div class="comment">flatpickrを利用した入力パネル</div>
+            </td>
+            <td><input type="text" size="40" value="出退社時のタイムカードの打刻"></td>
+        </tr>
+        <tr>
+            <td><select>
+                <option selected>仕事</option>
+                <option>ホーム</option>
+                <option>趣味</option>
+            </select></td>
+            <td><select>
+                <option>毎日</option>
+                <option>レポート</option>
+                <option selected>進行中</option>
+                <option>気付き</option>
+            </select></td>
+            <td>
+                <input type="text" size="15" value="2020/01/15 12:55">
+            </td>
+            <td><input type="text" size="40" value="クライアントからのメールの質問への回答"></td>
+        </tr>
+        <tr>
+            <td><select>
+                <option selected>仕事</option>
+                <option>ホーム</option>
+                <option>趣味</option>
+            </select></td>
+            <td><select>
+                <option>毎日</option>
+                <option>レポート</option>
+                <option>進行中</option>
+                <option selected>気付き</option>
+            </select></td>
+            <td>
+                <input type="text" size="15" value="020/01/15 14:45">
+            </td>
+            <td><input type="text" size="40" value="オフィスの消耗品については総務に相談すると在庫がある場合も"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="comment">「絞り込み」のボタンをクリックしたらs、そのメモだけが右側に表示される</div>
+
+</body>
+</html>
